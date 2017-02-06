@@ -300,7 +300,11 @@ console.log(shoeSize(10.5));
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
- 
+ function allCaps(str){
+return str.toUpperCase();
+ }
+
+ console.log(allCaps("willy wonka and the chocolate factory"));
 
 
 /*
@@ -310,7 +314,9 @@ console.log(shoeSize(10.5));
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
-
+function oneCap(str){
+return str 
+}
 
 
 /*
@@ -323,7 +329,9 @@ console.log(shoeSize(10.5));
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
-
+function verifyDrinkingAge(age){
+	return 
+}
 
 
 /**
