@@ -9,6 +9,8 @@ function greeting(guest){ // takes in a parameter named 'guest' which acts like 
 }
 greeting("Mr. Smith"); // invoking or calling the function to execute the code (instructions) inside the function.
 
+
+
 // Step Two: Assign the function invocation to a variable.
 var testGreeting = greeting("Mr. Smith"); // assigning the function call into a variable 
 
@@ -26,7 +28,8 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-
+var dood =2;
+var daad=3;
 
 
 /*
@@ -43,8 +46,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `sum`.
  * Console.log `sum` to test your code.
 */
+function add(num1,num2){
+	return num1 + num2;
+}
 
+ var sum = add(dood,daad);
 
+ console.log(sum);
 
 /*
  * #3
@@ -59,8 +67,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `difference`.
  * Console.log `difference` to test your code.
 */ 
+function subtract(num1,num2){
+	return num1 - num2;
+}
 
+var difference = subtract(5,9);
 
+console.log(difference);
 
 /*
  * #4
@@ -75,8 +88,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `product`.
  * Console.log `product` to test your code.
 */
+function multiply(num1,num2){
+	return num1 * num2;
+}
 
+var product = multiply(3,9);
 
+console.log(product);
 
 /*
  * #5
@@ -91,7 +109,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `quotient`.
  * Console.log `quotient` to test your code.
 */
+function divide(num1,num2){
+	return num1 / num2;
+}
 
+var quotient = divide(dood,daad);
+
+console.log(quotient);
 
 
 /*
@@ -105,8 +129,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will return the string "Mariah Carey has been married `x` amount of times." Where `x` is the value when you invoke the function. Invoke this function using the variable `sum`. 
  * Console.log your result.
 */
+function checkSum(times){
+	return "Mariah Carey has been married "+ times +" amount of times."
+}
 
-
+console.log(checkSum(2));
 
 /*
  * #7
@@ -119,7 +146,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will return the string "Last night I dreamt that I ate `x` Taco Bell soft tacos."  Where `x` is the value when you invoke the function. Invoke this function using the variable `difference`.
  * Console.log your results.
 */ 
+function checkDifference(x){
+return "Last night I dreamt that I ate " + x +" Taco Bell soft tacos." ;
+}
 
+console.log(checkDifference(difference));
 
 
 /*
@@ -132,7 +163,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the values stored in the sum and product.
  * Console.log your result.  
 */
+function checkProduct(){
+	return sum * product;
+}
 
+console.log(checkProduct());
 
 
 /*
@@ -145,7 +180,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the values stored in the product and quotient.
  * Console.log your result.  
 */
+function checkQuotient(){
+	return product / quotient;
+}
 
+console.log(checkQuotient());
 
 
 /*
@@ -167,8 +206,15 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
+var pho1 =2
+var pho2 =3
+var pho3 =1
 
+function addThenSubtract(num1,num2,num3){
+	return subtract(add(pho1,pho2),pho3) ;
+}
 
+console.log(addThenSubtract());
 
 /*
  * #11
@@ -183,8 +229,10 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the first two parameters together. Then with the product of that operation, divide it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-
-
+function multiplyThenDivide(num1,num2,num3){
+	return  divide(multiply(num1,num2),num3);
+}
+console.log(multiplyThenDivide(1,7,7));
 
 /*
  * #12
@@ -197,7 +245,13 @@ console.log(testGreeting); // printing the output value of the function.
  *
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
+function createFullName(firstName, lastName){
+	return firstName+" "+lastName;
+}
 
+var myFullName = createFullName("Ernest","Tsang");
+
+console.log(myFullName);
 
 
 /*
@@ -214,7 +268,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
  */
 
+function eatFood(fN,lN,food){
+	return createFullName(fN,lN) +" eats " + food + " everyday for breakfast." ;
+}
 
+console.log(eatFood("Jackie","Chan","pan cakes"));
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -228,8 +286,10 @@ console.log(testGreeting); // printing the output value of the function.
  * Create a function that will take in a parameter named `inches`. This function will convert inches to centimeters(cm).
  * Console.log your result. 
 */
-
-
+function shoeSize(numbah){
+	return multiply(numbah,2.54)+"cm";
+}
+console.log(shoeSize(10.5));
 
 /*
  * #15
