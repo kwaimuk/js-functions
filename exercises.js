@@ -351,7 +351,7 @@ return "chee hoo! we gonna wang chung tonight";
 }
 }
 var canParty = throwParty();
-console.log(throwParty());
+console.log(canParty);
 
 
 
