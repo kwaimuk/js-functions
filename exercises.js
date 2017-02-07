@@ -71,7 +71,7 @@ function subtract(num1,num2){
 	return num1 - num2;
 }
 
-var difference = subtract(5,9);
+var difference = subtract(dood,daad);
 
 console.log(difference);
 
@@ -92,7 +92,7 @@ function multiply(num1,num2){
 	return num1 * num2;
 }
 
-var product = multiply(3,9);
+var product = multiply(dood,daad);
 
 console.log(product);
 
@@ -130,10 +130,10 @@ console.log(quotient);
  * Console.log your result.
 */
 function checkSum(times){
-	return "Mariah Carey has been married "+ times +" amount of times."
+	return "Mariah Carey has been married "+ times +" amount of times.";
 }
 
-console.log(checkSum(2));
+console.log(checkSum(sum));
 
 /*
  * #7
@@ -166,7 +166,7 @@ console.log(checkDifference(difference));
 function checkProduct(){
 	return sum * product;
 }
-
+console.log(sum,product);
 console.log(checkProduct());
 
 
@@ -206,9 +206,9 @@ console.log(checkQuotient());
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-var pho1 =2
-var pho2 =3
-var pho3 =1
+var pho1 =2;
+var pho2 =3;
+var pho3 =1;
 
 function addThenSubtract(num1,num2,num3){
 	return subtract(add(pho1,pho2),pho3) ;
@@ -315,9 +315,9 @@ return str.toUpperCase();
  * Console.log your result.
 */
 function oneCap(str){
-return str 
+return str[0].toUpperCase() + str.slice(1);
 }
-
+console.log(oneCap("string"));
 
 /*
  * #17
@@ -330,9 +330,10 @@ return str
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 function verifyDrinkingAge(age){
-	return 
+	return age >= 21;
 }
 
+console.log(verifyDrinkingAge(20));
 
 /**
  * #18
