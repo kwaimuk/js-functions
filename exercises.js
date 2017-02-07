@@ -329,17 +329,29 @@ console.log(oneCap("string"));
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
-function verifyDrinkingAge(age){
-	return age >= 21;
+function verifyDrinkingAge(age){ if(age>=21){
+	return true;
+}else{
+	return false;
+}
 }
 
-console.log(verifyDrinkingAge(20));
+var canDrink = verifyDrinkingAge(20);
 
 /**
  * #18
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
+function throwParty(age){
+	if (canDrink ===true){
+return "chee hoo! we gonna wang chung tonight";
+}else{
+	return "see you at starbucks";
+}
+}
+var canParty = throwParty();
+console.log(throwParty());
 
 
 
